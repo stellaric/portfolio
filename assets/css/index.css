@@ -55,10 +55,29 @@ h1, h2 {
     font-weight: 500;
     text-transform: uppercase;
     transition: 0.3s;
+    font-family: 'Bobby Jones';
 }
 
 .nav-links a:hover {
     color: #127789;
+}
+.nav-links-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-family: 'Bobby Jones';
+    padding: 8px;
+    border: 4px solid;
+    border-radius: 20px;
+    background: #127789;
+}
+.nav-links-right a:hover {
+    color: #127789;
+    background: white;
+    border: 4px solid #127789;
 }
 /*** HERO SECTION */
 .hero {
@@ -105,11 +124,244 @@ h1, h2 {
 .hero-col-text h1 {
     font-size: 48px; /* 🔥 plus grand */
     margin-bottom: 20px;
-}
+}/*
 .hero-col-image {
-   /*width: 50%;*/
-}
+   width: 50%;
+}*/
 .hero-col-image img {
     width: 100%;
     height: auto;
+}
+/* ABOUT SECTION */
+.about{
+    height: 70vh; /* 🔥 plus grand */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    width: 100%;
+}
+.about-content {
+    margin-top: 40px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 70%;
+}
+.about-content h2 {
+    font-size: 36px; /* 🔥 plus grand */
+    margin-bottom: 20px;
+}
+.about-content p {
+    font-size: 18px; /* 🔥 plus grand */
+}
+.about-image {
+    width: 30%;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+/* PROJECTS SECTION */
+.projects {
+    /* padding: 60px 20px; */
+    height: 70vh;
+    background: #127789;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: white;
+    height: 50%;
+}
+.projects-header h2 {
+    font-size: 36px; /* 🔥 plus grand */
+    text-align: center;
+    margin-bottom: 40px;
+}
+.projects-header p {
+    font-size: 18px; /* 🔥 plus grand */
+    text-align: center;
+    max-width: 600px;
+}
+.projects-header a {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #127789;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.projects-header a:hover {  
+    background-color: #127789;
+    color: white;    
+    border: 2px solid white;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* espace entre les projets */
+    justify-content: center;
+    height: 50%;
+}
+.project-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    height: fit-content;
+}
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.project-item h3 {
+    font-size: 24px; /* 🔥 plus grand */
+}   
+/*² CONTACT SECTION */
+.contact {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.contact h2 {
+    font-size: 36px; /* 🔥 plus grand */
+}
+.contact p {
+    font-size: 18px; /* 🔥 plus grand */
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+.contact a {
+    padding: 15px 30px;
+    background-color: #127789;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.contact a:hover {
+    background-color: white;
+    color: #127789;
+    border: 2px solid #127789;
+}
+
+/*BLOG SECTION */
+.blog {
+    padding: 60px 20px;
+    background-color: #127789;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.blog-content {
+    width: 50%;
+    text-align: center;
+    color:white
+}
+.blog-content h2 {
+    font-size: 36px; /* 🔥 plus grand */
+    margin-bottom: 20px;
+}
+.blog-content p {
+    font-size: 18px; /* 🔥 plus grand */
+    padding:25px 20px;
+}   
+.blog-content a {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #127789;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.blog-content a:hover {
+    background-color: #127789;
+    color: white;
+    border: 2px solid white;
+}
+.blog-image {
+    width: 50%;
+}
+.blog-image img {
+    width: 100%;
+    height: auto;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #127789;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.back-to-top:hover {
+    background-color: white;
+    color: #127789;
+    border: 2px solid #127789;
+}
+.back-to-top:after {
+    content: '↑';
+    font-size: 18px;
+}
+.back-to-top:hover:after {
+    content: '↑';
+    font-size: 18px;
+}
+.back-to-top a {
+    text-decoration: none;
+    color: #127789;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: "Bobby Jones";
+}
+.back-to-top a:hover {    
+    background-color: white;
+    color: #127789;    
+   
+}
+/** FOOTER */
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Bobby Jones';
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
 }
