@@ -1,0 +1,25 @@
+effet glassmophirsm navbar : (css)
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 60px; /* 🔥 plus grand */
+    background-color: white;
+
+
+    /* 🌫️ Glass effect */
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
