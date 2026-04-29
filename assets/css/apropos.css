@@ -1,0 +1,259 @@
+.hero-about {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      background-color: #127789;
+      color: white;
+}
+.hero-about h1 {
+    font-size: 48px; /* 🔥 plus grand */
+    margin-bottom: 20px;
+}
+.hero-about p {
+    font-size: 20px; /* 🔥 plus grand */
+}
+/* Styles pour la section "À propos" */
+.apropos-content {
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+    background-color: #127789;
+}
+.apropos-content h2 {
+    font-size: 36px; /* 🔥 plus grand */
+    margin-bottom: 20px;
+}
+.apropos-content p {
+    font-size: 18px; /* 🔥 plus grand */
+}
+.apropos-content a {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #127789;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 20%;
+}
+.apropos-content a:hover {    background-color: #127789;
+    color: white;    border: 2px solid white;
+}
+
+.about-content {
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    justify-content: center;
+}
+.about-content h2 {
+    font-size: 36px; /* 🔥 plus grand */
+    margin-bottom: 20px;
+}
+.about-content p {
+    font-size: 18px; /* 🔥 plus grand */
+}
+.about-content a {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #127789;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 20%;
+}
+.about-content a:hover {    background-color: #127789;
+    color: white;    border: 2px solid white;
+}   
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    width: 90%;
+    max-width: 1300px;
+
+    margin: 80px auto;
+    padding: 50px;
+
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+
+.about-me-txt {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: left;
+}
+
+.about-me-txt h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #127789;
+}
+
+.about-me-txt p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.about-me-txt .btn {
+    margin-top: 25px;
+
+    width: fit-content;
+
+    padding: 14px 28px;
+    border-radius: 12px;
+
+    background-color: #127789;
+    color: white;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.about-me-txt .btn:hover {
+    background-color: #0d5c69;
+    transform: translateY(-3px);
+}
+.about-me-img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 420px;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.10);
+}
+/* ===== SECTION 3 BLOCS ===== */
+.sections-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+
+    width: 100%;
+    padding: 60px 40px;
+    box-sizing: border-box;
+
+    flex-wrap: wrap;
+}
+
+/* Chaque colonne */
+.section-container-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Cards */
+.about-content,
+.skills {
+    background-color: #127789;
+    color: white;
+
+    border-radius: 20px;
+    padding: 40px 30px;
+
+    height: 100%;
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+
+/* Liste compétences */
+.skills ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.skills li {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+/* ===== SECTION CV + RESEAUX ===== */
+.bottom-sections {
+    display: flex;
+    gap: 30px;
+
+    padding: 60px 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+    flex-wrap: wrap;
+}
+
+.resume,
+.reseaux-sociaux {
+    flex: 1;
+    min-width: 320px;
+
+    background-color: #127789;
+    color: white;
+
+    padding: 40px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+
+/* Boutons */
+.resume .btn,
+.reseaux-sociaux .btn {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Hover premium */
+.about-content:hover,
+.skills:hover,
+.resume:hover,
+.reseaux-sociaux:hover {
+    transform: translateY(-6px);
+    transition: 0.3s ease;
+}

@@ -1,0 +1,109 @@
+/* SECTION CONTACT */
+.contact-form-section {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+
+    background: linear-gradient(135deg, #127789, #0e6270);
+
+    color: white;
+    text-align: center;
+}
+
+/* CARD */
+.contact-header,
+.contact-card {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+
+    padding: 40px;
+    border-radius: 24px;
+
+    width: 100%;
+    max-width: 750px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.10);
+}
+
+/* HEADER */
+.contact-header {
+    margin-bottom: 30px;
+}
+
+.contact-header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+      font-family: 'Bobby Jones';
+}
+
+.contact-header p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* TEXTE */
+.contact-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* EMAIL */
+.contact-card a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links li a {
+    display: inline-block;
+
+    padding: 12px 22px;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.15);
+
+    transition: 0.3s ease;
+}
+
+.social-links li a:hover {
+    background: white;
+    color: #127789;
+    transform: translateY(-4px);
+}
+
+/* BTN RETOUR */
+.btn {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 14px 28px;
+
+    background: white;
+    color: #127789 !important;
+
+    border-radius: 12px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: #f5f5f5;
+}
