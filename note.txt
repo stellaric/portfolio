@@ -23,3 +23,16 @@ effet glassmophirsm navbar : (css)
     z-index: 1000;
 
 }
+
+texte espace à garder ?
+.about-content h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.8;
+}
