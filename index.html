@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/png" href="media/logo-onglet-stella.png">
+
 </head>
 
 
@@ -17,20 +19,44 @@
 
 <!-- En-tête avec la barre de navigation et la section de héros -->
 <header>
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <img src="media/logo_stella.png" alt="Logo de mon site" class="logo">
-        </div>
+ <nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="navbar-logo">
+        <img src="media/logo-stella.png" alt="Logo" class="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- MENU -->
+    <div class="nav-menu">
+
         <div class="nav-links">
+
             <a href="index.html">Accueil</a>
-             <a href="vues/projets.html">Projets</a>
-             <a href="vues/blog.html">Blog</a>
+            <a href="vues/projets.html">Projets</a>
+            <a href="vues/blog.html">Blog</a>
             <a href="vues/apropos.html">À propos</a>
-            </div>
-            <div class="nav-links-right">
-            <a href="vues/contact.html">Contact</a>
+            <a href="vues/mystere.html">?</a>
+
         </div>
-    </nav>
+
+        <div class="nav-links-right">
+
+            <a href="vues/contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
 <!-- Section de héros -->
  <div class="hero">
  
@@ -180,6 +206,8 @@
 <footer class="footer">
     <p>&copy; 2026 Stella Portfolio. Tous droits réservés.</p>
 </footer>
+<script src="assets/js/backtotop.js"></script>
+<script src="assets/js/menu.js"></script>
 
 </body>
 </html> 

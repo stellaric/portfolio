@@ -1,109 +1,330 @@
-/* SECTION CONTACT */
-.contact-form-section {
-    min-height: 100vh;
+/* =========================
+   SECTION CONTACT
+========================= */
+
+.contact-form-section{
+    min-height: 80vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding: 80px 20px;
+    padding: 40px 10px;
 
-    background: linear-gradient(135deg, #127789, #0e6270);
+    position: relative;
+    overflow: hidden;
+
+    background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.10), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.08), transparent 30%),
+    linear-gradient(135deg,#127789,#0d6472);
 
     color: white;
-    text-align: center;
 }
 
-/* CARD */
-.contact-header,
-.contact-card {
-    background: rgba(255,255,255,0.12);
-    backdrop-filter: blur(12px);
+/* =========================
+   PATTERN BACKGROUND
+========================= */
 
-    padding: 40px;
-    border-radius: 24px;
+.contact-form-section::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.05) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 2px, transparent 2px);
+
+    background-size: 70px 70px;
+
+    opacity: 0.5;
+
+    pointer-events: none;
+}
+
+/* =========================
+   GLOW EFFECTS
+========================= */
+
+.contact-form-section::after{
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.10);
+
+    filter: blur(120px);
+
+    top: -150px;
+    right: -100px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.contact-header{
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    animation: fadeUp 1s ease;
+}
+
+.contact-header h1{
+    font-size: 72px;
+
+    margin-bottom: 20px;
+
+    font-family: "Bobby Jones";
+
+    line-height: 1;
+}
+
+.contact-header p{
+    font-size: 20px;
+
+    max-width: 700px;
+
+    line-height: 1.7;
+
+    opacity: 0.95;
+}
+
+/* =========================
+   CONTACT CARD
+========================= */
+
+.contact-card{
+    position: relative;
+    z-index: 2;
 
     width: 100%;
-    max-width: 750px;
+    max-width: 820px;
 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.10);
+    padding: 55px;
+
+    border-radius: 35px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,0.18),
+    inset 0 1px 1px rgba(255,255,255,0.15);
+
+    text-align: center;
+
+    animation: fadeUp 1.2s ease;
 }
 
-/* HEADER */
-.contact-header {
-    margin-bottom: 30px;
+/* PETITE LUMIERE */
+
+.contact-card::before{
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    left: -100px;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.10);
+
+    filter: blur(60px);
 }
 
-.contact-header h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-      font-family: 'Bobby Jones';
-}
+/* =========================
+   TEXTES
+========================= */
 
-.contact-header p {
-    font-size: 18px;
-    line-height: 1.6;
-}
+.contact-card p{
+    font-size: 20px;
 
-/* TEXTE */
-.contact-card p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    line-height: 1.7;
+
+    margin-bottom: 18px;
 }
 
 /* EMAIL */
-.contact-card a {
+
+.contact-card a{
     color: white;
     text-decoration: none;
 }
 
-/* SOCIAL LINKS */
-.social-links {
+.contact-card a:hover{
+    opacity: 0.85;
+}
+
+/* =========================
+   EMAIL BOX
+========================= */
+
+.email-box{
+    margin: 35px auto;
+
+    padding: 20px 30px;
+
+    max-width: 500px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    transition: 0.35s ease;
+}
+
+.email-box:hover{
+    transform: translateY(-5px);
+
+    background: rgba(255,255,255,0.12);
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links{
     list-style: none;
-    padding: 0;
-    margin: 30px 0;
 
     display: flex;
     justify-content: center;
     gap: 20px;
+
     flex-wrap: wrap;
+
+    margin-top: 35px;
+
+    padding: 0;
 }
 
-.social-links li a {
-    display: inline-block;
+.social-links li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    padding: 12px 22px;
-    border-radius: 12px;
+    width: 65px;
+    height: 65px;
 
-    background: rgba(255,255,255,0.15);
+    border-radius: 18px;
 
-    transition: 0.3s ease;
-}
+    background: rgba(255,255,255,0.12);
 
-.social-links li a:hover {
-    background: white;
-    color: #127789;
-    transform: translateY(-4px);
-}
+    border: 1px solid rgba(255,255,255,0.15);
 
-/* BTN RETOUR */
-.btn {
-    display: inline-block;
-
-    margin-top: 20px;
-    padding: 14px 28px;
-
-    background: white;
-    color: #127789 !important;
-
-    border-radius: 12px;
+    font-size: 18px;
     font-weight: 600;
 
-    transition: 0.3s ease;
+    transition: 0.35s ease;
 }
 
-.btn:hover {
-    transform: translateY(-4px);
-    background: #f5f5f5;
+.social-links li a:hover{
+    transform:
+    translateY(-8px)
+    scale(1.08);
+
+    background: white;
+
+    color: #127789;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+
+    padding: 16px 34px;
+
+    border-radius: 16px;
+
+    background: white;
+
+    color: #127789 !important;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.35s ease;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,0.12);
+}
+
+.btn:hover{
+    transform: translateY(-6px);
+
+    background: #f2f2f2;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px){
+
+    .contact-header h1{
+        font-size: 48px;
+    }
+
+    .contact-header p{
+        font-size: 18px;
+    }
+
+    .contact-card{
+        padding: 35px 25px;
+    }
+
+    .contact-card p{
+        font-size: 17px;
+    }
+
+    .social-links li a{
+        width: 55px;
+        height: 55px;
+    }
 }

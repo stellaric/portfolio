@@ -14,26 +14,49 @@
 <body>
     <header>
         <!-- En-tête avec la barre de navigation et la section de héros -->
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <img src="../media/logo_stella.png" alt="Logo de mon site" class="logo">
-            </div>
-            <div class="nav-links">
-                <a href="../index.html">Accueil</a>
-                <a href="projets.html">Projets</a>
-                <a href="blog.html">Blog</a>
-                <a href="apropos.html">À propos</a>
-            </div>
-            <div class="nav-links-right">
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+    <nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="navbar-logo">
+        <img src="../media/logo-stella.png" alt="Logo" class="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- MENU -->
+    <div class="nav-menu">
+
+        <div class="nav-links">
+
+            <a href="../index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="blog.html">Blog</a>
+            <a href="apropos.html">À propos</a>
+            <a href="mystere.html">?</a>
+
+        </div>
+
+        <div class="nav-links-right">
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
         <!-- Section de héros -->
          <div class="hero-projects">
             <h1>Mes Projets</h1>
             <p>Découvrez une sélection de mes projets récents et les défis que j'ai relevés.</p>
-             <a href="projets.html" class="btn">Voir tous les projets</a>
-        </div>
+          </div>
     </header>
 
     <!-- Section principale -->
@@ -44,32 +67,55 @@
                 <h2>Projets Récents</h2>
                 <p>Découvrez une sélection de mes projets récents et les défis que j'ai relevés.</p>
                 </div>
-            <div class="project-list">
-                <div class="project-item">
-                    <img src="../media/project1.png" alt="Image du projet 1" class="project-image">
-                    <h3>Projet 1 : Site de e-commerce</h3>
-                    <p>Un site de commerce en ligne développé avec React et Node.js, offrant une expérience utilisateur fluide et des fonctionnalités avancées de gestion de produits.</p>
-                <a href="projets.html" class="btn">Voir le projet</a>
-                </div>
-                <div class="project-item">
-                    <img src="../media/project2.png" alt="Image du projet 2" class="project-image">
-                    <h3>Projet 2 : Application mobile de fitness</h3>
-                    <p>Une application mobile conçue pour aider les utilisateurs à suivre leurs activités physiques, avec des fonctionnalités de suivi des entraînements et de planification d'exercices.</p>
-                <a href="projets.html" class="btn">Voir le projet</a>
-                </div>
-                <div class="project-item">
-                    <img src="../media/project3.png" alt="Image du projet 3" class="project-image">
-                    <h3>Projet 3 : Portfolio personnel</h3>
-                    <p>Un portfolio en ligne mettant en valeur mes compétences et mes réalisations, conçu avec HTML, CSS et JavaScript pour une présentation professionnelle.</p>
-                <a href="projets.html" class="btn">Voir le projet</a>
-                </div>
-                <div class="project-item">
-                    <img src="../media/project3.png" alt="Image du projet 3" class="project-image">
-                    <h3>Projet 3 : Portfolio personnel</h3>
-                    <p>Un portfolio en ligne mettant en valeur mes compétences et mes réalisations, conçu avec HTML, CSS et JavaScript pour une présentation professionnelle.</p>
-                <a href="projets.html" class="btn">Voir le projet</a>
-                </div>
-            </div>
+            <!-- ========================= -->
+<!-- PAGE PROJETS.HTML -->
+<!-- ========================= -->
+
+<div class="project-list">
+
+    <!-- PROJET 1 -->
+    <a href="projetdetail.html?id=1 " class="project-item">
+
+        <div class="project-img">
+            <img src="https://picsum.photos/id/1/600/400" alt="">
+        </div>
+
+        <div class="project-txt">
+            <h3>Projet E-commerce</h3>
+            <p>Création d’un site moderne et responsive.</p>
+        </div>
+
+    </a>
+
+    <!-- PROJET 2 -->
+    <a href="projetdetail.html?id=2" class="project-item">
+
+        <div class="project-img">
+            <img src="https://picsum.photos/id/2/600/400" alt="">
+        </div>
+
+        <div class="project-txt">
+            <h3>Application Fitness</h3>
+            <p>Application mobile intuitive et moderne.</p>
+        </div>
+
+    </a>
+
+    <!-- PROJET 3 -->
+    <a href="projetdetail.html?id=3" class="project-item">
+
+        <div class="project-img">
+            <img src="https://picsum.photos/id/3/600/400" alt="">
+        </div>
+
+        <div class="project-txt">
+            <h3>Portfolio Créatif</h3>
+            <p>Portfolio premium avec animations modernes.</p>
+        </div>
+
+    </a>
+
+</div>
         </section>
         <!-- Section des projets en cours et autres projets -->
         <section class="projects-loader">
@@ -78,16 +124,21 @@
                 <p>Je travaille actuellement sur plusieurs projets passionnants, notamment une application de gestion de tâches et un site de blog personnel. Restez à l'écoute pour les mises à jour !</p>
                 <div class="project-list">
                     <div class="project-item">
-                        <img src="../media/project4.png" alt="Image du projet 4" class="project-image">
+                        <div class="project-img">
+                        <img src="https://picsum.photos/id/1/200/300" alt="Image du projet 4" class="project-image">
+                        </div>
+                        <div class="project-txt">
                         <h3>Projet 4 : Application de gestion de tâches</h3>
                         <p>Une application conçue pour aider les utilisateurs à organiser leurs tâches quotidiennes, avec des fonctionnalités de rappel et de catégorisation.</p>
-                    <a href="projets.html" class="btn">Voir le projet</a>
+                    </div>
                     </div>
                     <div class="project-item">
-                        <img src="../media/project5.png" alt="Image du projet 5" class="project-image">
+                        <div class="project-img">
+                        <img src="https://picsum.photos/id/2/200/300" alt="Image du projet 5" class="project-image">
+                        </div>
+                        <div class="project-txt">
                         <h3>Projet 5 : Site de blog personnel</h3>
                         <p>Un site de blog personnel où je partage mes réflexions sur la technologie, le développement web et d'autres sujets qui me passionnent.</p>
-                    <a href="projets.html" class="btn">Voir le projet</a>
                     </div>
             </div>
         </section>
@@ -100,14 +151,19 @@
             </div>
         </section>
         <!-- Bouton de retour en haut -->
-<div class="back-to-top">
-    <a href="index.html" class="btn">Revenir en haut</a>
-</div>
+<div class="btn-top">
+<!-- Bouton retour en haut -->
+<button class="back-to-top">
 
+  Revenir en haut 
+
+</button>
+</div>
     </main>
 
     <footer>
         <p>&copy; 2026 Stella Portfolio. Tous droits réservés.</p>
     </footer>
+    <script src="../assets/js/menu.js"></script>
 </body>
 </html>

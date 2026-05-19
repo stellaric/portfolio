@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Inter;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* SECTION */
+.project-details {
+    padding: 100px 10%;
+}
+
+/* HERO */
+.project-hero {
+    position: relative;
+
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.project-glow {
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    background: rgba(18,119,137,0.2);
+
+    filter: blur(120px);
+
+    border-radius: 50%;
+
+    top: -100px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.project-hero h1 {
+    font-size: 64px;
+
+    margin-bottom: 20px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.project-hero p {
+    font-size: 20px;
+
+    opacity: 0.7;
+
+    position: relative;
+    z-index: 2;
+}
+
+.project-hero img {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin-top: 50px;
+
+    border-radius: 30px;
+
+    position: relative;
+    z-index: 2;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* CONTENT */
+.project-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.project-content h2 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    font-size: 36px;
+}
+
+.project-content p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* TAGS */
+.project-tags {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-tags span {
+    padding: 12px 20px;
+
+    border-radius: 50px;
+
+    background: #127789;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.project-link {
+    margin-top: 40px;
+}
+.project-link-container {
+    margin-top: 20px;
+}
+.project-link-container a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #127789;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.project-link a:hover {
+    background-color: white;
+    color: #127789;
+    border: 2px solid #127789;
+}
+.project-link a:active {
+    background-color: #127789;
+    color: white;
+    border: none;
+}
+.project-back-link {
+    margin-bottom: 40px;
+}
+.project-back-link a {
+    color: #127789;
+    text-decoration: underline;
+}
+.project-back-link a:hover {
+    color: #127789;
+    text-decoration: none;
+}
+.project-back-link a:active {
+    color: #127789;
+    text-decoration: underline;
+}
+.project-content h2 {
+    font-size: 36px; /* 🔥 plus grand */
+    margin-bottom: 20px;
+}
+.project-content p {
+    font-size: 18px; /* 🔥 plus grand */
+}   

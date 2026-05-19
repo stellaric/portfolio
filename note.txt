@@ -36,3 +36,563 @@ texte espace à garder ?
     line-height: 1.7;
     opacity: 0.8;
 }
+
+/* PATTERN (grille légère) */
+.blog-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+}
+
+ background: linear-gradient(135deg, rgb(18 119 137 / 0%), rgb(30 60 77 / 0%)), url(../../media/blog/bgd-blog.png);
+    background: rgb(0 0 0 / 0%);
+
+
+
+
+    .project-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/*** SLider projet detailles ****/
+<div class="project-slider">
+
+    <button class="slider-btn prev">←</button>
+
+    <div class="slider-container">
+
+        <img src="https://picsum.photos/id/10/1200/700" class="slide active">
+
+        <img src="https://picsum.photos/id/20/1200/700" class="slide">
+
+        <img src="https://picsum.photos/id/30/1200/700" class="slide">
+
+    </div>
+
+    <button class="slider-btn next">→</button>
+
+</div>
+<style>
+/* SLIDER */
+.project-slider {
+    position: relative;
+
+    margin-top: 80px;
+}
+
+/* CONTAINER */
+.slider-container {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+}
+
+/* IMAGES */
+.slide {
+    width: 100%;
+
+    display: none;
+
+    border-radius: 30px;
+
+    animation: fade 0.5s ease;
+}
+
+/* ACTIVE */
+.slide.active {
+    display: block;
+}
+
+/* BUTTONS */
+.slider-btn {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.8);
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+.slider-btn:hover {
+    background: white;
+
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* POSITIONS */
+.prev {
+    left: -20px;
+}
+
+.next {
+    right: -20px;
+}
+
+/* FADE */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+</style>
+<script>
+/* SLIDER */
+
+const slides =
+document.querySelectorAll(".slide");
+
+const nextBtn =
+document.querySelector(".next");
+
+const prevBtn =
+document.querySelector(".prev");
+
+let current = 0;
+
+/* SHOW */
+function showSlide(index) {
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+}
+
+/* NEXT */
+nextBtn.addEventListener("click", () => {
+
+    current++;
+
+    if(current >= slides.length) {
+        current = 0;
+    }
+
+    showSlide(current);
+});
+
+/* PREV */
+prevBtn.addEventListener("click", () => {
+
+    current--;
+
+    if(current < 0) {
+        current = slides.length - 1;
+    }
+
+    showSlide(current);
+});
+</script>
+
+--------------------------
+<section class="project-gallery">
+
+    <h2>Galerie du projet</h2>
+
+    <div class="gallery-grid">
+
+        <img src="https://picsum.photos/id/11/800/1000">
+
+        <img src="https://picsum.photos/id/12/800/600">
+
+        <img src="https://picsum.photos/id/13/800/900">
+
+        <img src="https://picsum.photos/id/14/800/700">
+
+        <img src="https://picsum.photos/id/15/800/1000">
+
+    </div>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox">
+
+    <span class="close-lightbox">×</span>
+
+    <img class="lightbox-img">
+
+</div>
+</section>
+<style>
+/* SECTION */
+.project-gallery {
+    margin-top: 100px;
+}
+
+/* TITRE */
+.project-gallery h2 {
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 50px;
+}
+
+/* GRID */
+.gallery-grid {
+    columns: 3 300px;
+
+    column-gap: 20px;
+}
+
+/* IMAGES */
+.gallery-grid img {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* HOVER */
+.gallery-grid img:hover {
+    transform: translateY(-8px) scale(1.02);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* LIGHTBOX */
+.lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.92);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    animation: fadeIn 0.3s ease;
+}
+
+/* IMAGE */
+.lightbox-img {
+    max-width: 85%;
+    max-height: 85%;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+
+    animation: zoomIn 0.3s ease;
+}
+
+/* CLOSE BTN */
+.close-lightbox {
+    position: absolute;
+
+    top: 30px;
+    right: 40px;
+
+    color: white;
+
+    font-size: 50px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+.close-lightbox:hover {
+    transform: scale(1.2);
+}
+
+/* ANIM */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+</style>
+<script>
+/* LIGHTBOX */
+
+const galleryImages =
+document.querySelectorAll(".gallery-grid img");
+
+const lightbox =
+document.querySelector(".lightbox");
+
+const lightboxImg =
+document.querySelector(".lightbox-img");
+
+const closeLightbox =
+document.querySelector(".close-lightbox");
+
+/* OPEN */
+galleryImages.forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        lightbox.style.display = "flex";
+
+        lightboxImg.src = img.src;
+
+    });
+
+});
+
+/* CLOSE BTN */
+closeLightbox.addEventListener("click", () => {
+
+    lightbox.style.display = "none";
+
+});
+
+/* CLOSE CLICK BACKGROUND */
+lightbox.addEventListener("click", (e) => {
+
+    if(e.target !== lightboxImg) {
+
+        lightbox.style.display = "none";
+
+    }
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 60px;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+}
+
+/* MENU */
+
+.nav-menu{
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* HAMBURGER */
+
+.hamburger{
+
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+    z-index: 1001;
+}
+
+.hamburger span{
+
+    width: 30px;
+    height: 3px;
+
+    background: #127789;
+
+    border-radius: 10px;
+
+    transition: 0.4s ease;
+}
+
+/* ANIMATION */
+
+.hamburger.active span:nth-child(1){
+
+    transform:
+    rotate(45deg)
+    translateY(12px);
+}
+
+.hamburger.active span:nth-child(2){
+
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3){
+
+    transform:
+    rotate(-45deg)
+    translateY(-12px);
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media screen and (max-width: 768px){
+
+    /* HAMBURGER */
+
+    .hamburger{
+        display: flex;
+    }
+
+    /* MENU */
+
+    .nav-menu{
+
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: 100%;
+        height: 100vh;
+
+        background:
+        rgba(18,119,137,0.96);
+
+        backdrop-filter: blur(12px);
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 50px;
+
+        transition: 0.5s ease;
+
+        z-index: 1000;
+    }
+
+    /* ACTIVE */
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    /* LINKS */
+
+    .nav-links{
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 35px;
+    }
+
+    .nav-links a{
+
+        font-size: 28px;
+        color: white;
+    }
+
+    .nav-links-right a{
+
+        font-size: 22px;
+
+        background: white;
+        color: #127789;
+
+        border: none;
+    }
+
+}

@@ -5,26 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../assets/css/apropos.css">
         <link rel="stylesheet" href="../assets/css/general.css">
+        <link rel="icon" type="image/png" href="../media/logo-onglet-stella.png">
+
     <title>À propos</title>
 </head>
 
 <body>
     <header>
         <!-- En-tête avec la barre de navigation et la section de héros -->
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <img src="../media/logo_stella.png" alt="Logo de mon site" class="logo">
-            </div>
-            <div class="nav-links">
-                <a href="../index.html">Accueil</a>
-                <a href="projets.html">Projets</a>
-                <a href="blog.html">Blog</a>
-                <a href="apropos.html">À propos</a>
-            </div>
-            <div class="nav-links-right">
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+      <nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="navbar-logo">
+        <img src="../media/logo-stella.png" alt="Logo" class="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- MENU -->
+    <div class="nav-menu">
+
+        <div class="nav-links">
+
+            <a href="../index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="blog.html">Blog</a>
+            <a href="apropos.html">À propos</a>
+            <a href="mystere.html">?</a>
+
+        </div>
+
+        <div class="nav-links-right">
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
         <!-- Section de héros -->
          <div class="hero-about">
             <h1>À propos de moi</h1>
@@ -33,7 +59,7 @@
     </header>
 
     <!-- Section principale -->
-    <main>
+    <main class="main-about">
         <!-- Section à propos de moi -->
         <section class="about-me">
 
@@ -44,7 +70,7 @@
             </div>
 
             <div class="about-me-img">
-                <img src="../media/about_image.png" alt="Image à propos de moi" class="about-image">
+                <img src="../media/apropos/img-stella.png" alt="Image à propos de moi" class="about-image">
             </div>
 
         </section>
@@ -91,8 +117,90 @@
         <p>Suivez-moi sur les réseaux.</p>
         <a href="#" class="btn">Voir</a>
     </section>
+    <section class="creative-universe">
 
+    <div class="creative-header">
+        <span>Mon univers</span>
+        <h2>Mes expériences créatives</h2>
+        <p>
+            Un aperçu de mon univers, de mes inspirations et des expériences
+            qui nourrissent ma créativité au quotidien.
+        </p>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider-container">
+
+        <div class="slider-track">
+
+            <!-- CARD 1 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/237/200/300" alt="Projet créatif">
+
+                <div class="slide-overlay">
+                    <h3>UI Design</h3>
+                    <p>Création d'interfaces modernes et intuitives.</p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/227/200/3002.jpg" alt="Moodboard">
+
+                <div class="slide-overlay">
+                    <h3>Moodboards</h3>
+                    <p>Inspirations visuelles et direction artistique.</p>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/137/200/300" alt="Création digitale">
+
+                <div class="slide-overlay">
+                    <h3>Branding</h3>
+                    <p>Identités visuelles modernes et cohérentes.</p>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/257/200/300" alt="Workspace">
+
+                <div class="slide-overlay">
+                    <h3>Workspace</h3>
+                    <p>Organisation et environnement créatif.</p>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/127/200/300" alt="Lifestyle">
+
+                <div class="slide-overlay">
+                    <h3>Lifestyle</h3>
+                    <p>Un univers moderne, créatif et inspirant.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+ 
 </div>
+   <!-- Section principale -->
+        <section class="cta-projects">
+    <div class="cta-content">
+        <h2>Tu as vu mes projets ?</h2>
+        <p>
+            Découvre une sélection de mes réalisations en design, branding et développement.
+            Chaque projet reflète mon approche créative et ma manière de résoudre des problématiques concrètes.
+        </p>
+        <a href="projets.html" class="cta-btn">Voir mes projets</a>
+    </div>
+</section>
     </main>
     <div class="back-to-top">
     <a href="index.html" class="btn">Revenir en haut</a>
@@ -100,5 +208,6 @@
         <footer>
             <p>&copy; 2026 Stella Portfolio. Tous droits réservés.</p>
         </footer>
+         <script src="../assets/js/menu.js"></script>
 </body>
 </html>

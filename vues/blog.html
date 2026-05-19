@@ -10,20 +10,44 @@
 <body>
     <header>
         <!-- En-tête avec la barre de navigation et la section de héros -->
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <img src="../media/logo_stella.png" alt="Logo de mon site" class="logo">
-            </div>
-            <div class="nav-links">
-                <a href="../index.html">Accueil</a>
-                <a href="projets.html">Projets</a>
-                <a href="https://caramel-scribe-ee8.notion.site/Blog-Voyage-25a0887156f2805fad26cf32d80b3ff8">Blog</a>
-                <a href="apropos.html">À propos</a>
-            </div>
-            <div class="nav-links-right">
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+    <nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="navbar-logo">
+        <img src="../media/logo-stella.png" alt="Logo" class="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- MENU -->
+    <div class="nav-menu">
+
+        <div class="nav-links">
+
+            <a href="../index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="blog.html">Blog</a>
+            <a href="apropos.html">À propos</a>
+            <a href="mystere.html">?</a>
+
+        </div>
+
+        <div class="nav-links-right">
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
        
     </header>
     <main>
@@ -32,14 +56,42 @@
          <div class="hero-blog">
             <h1>Mon Blog</h1>
             <p>Découvrez mes derniers articles et réflexions sur mes activités professionnelles et personnelles.</p>
-             <a href="https://caramel-scribe-ee8.notion.site/Blog-Voyage-25a0887156f2805fad26cf32d80b3ff8" class="btn">Lire le blog</a>
+             <a href="blogdetail.html" class="btn">Accéder au blog</a>
         </div>
+       
+        </section>
+     <section class="cta-projects">
+    <div class="cta-content">
+        <h2>Tu as vu mes projets ?</h2>
+        <p>
+            Découvre une sélection de mes réalisations en design, branding et développement.
+            Chaque projet reflète mon approche créative et ma manière de résoudre des problématiques concrètes.
+        </p>
+       
+    </div>
+</section>
+
+         <section class="bloc-blog">
+            <div class="bloc-blog-left">
+                <h2>Blog Voyage</h2>
+                 <img src="../media/blogdetail/img-perso.png" alt="Image de blog">
+                <p>C'est un espace où je partage mes passions et mes inspirations au-delà de mon travail professionnel.<br> N'hésitez pas à explorer et à me suivre pour rester connecté avec mes aventures créatives et personnelles.</p>
+                    <a href="https://caramel-scribe-ee8.notion.site/Blog-Voyage-25a0887156f2805fad26cf32d80b3ff8" class="btn">Accéder au blog</a>
+                   </div>
+            <div class="bloc-blog-right">
+                <h2>Blog Digitale </h2>
+                <img src="../media/blogdetail/img-pro.png" alt="Image de blog">
+                <p>Découvrez mes derniers articles et réflexions sur mes activités professionnelles et personnelles.</p>
+                <a href="https://caramel-scribe-ee8.notion.site/Blog-Voyage-25a0887156f2805fad26cf32d80b3ff8" class="btn">Accéder au blog</a>
+            </div>
         </section>
 
+      
+</main>
 <footer>
     <p>&copy; 2026 Stella Portfolio. Tous droits réservés.</p>
 </footer>
 
-    
+     <script src="../assets/js/menu.js"></script>
 </body>
 </html>

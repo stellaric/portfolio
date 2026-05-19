@@ -7,25 +7,51 @@
     <link rel="stylesheet" href="../assets/css/general.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../media/logo-onglet-stella.png">
     <title>Contact</title>
 </head>
 <body>
     <header>
         <!-- En-tête avec la barre de navigation et la section de héros -->
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <img src="../media/logo_stella.png" alt="Logo de mon site" class="logo">
-            </div>
-            <div class="nav-links">
-                <a href="../index.html">Accueil</a>
-                <a href="projets.html">Projets</a>
-                <a href="blog.html">Blog</a>
-                <a href="apropos.html">À propos</a>
-            </div>
-            <div class="nav-links-right">
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+       <nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="navbar-logo">
+        <img src="../media/logo-stella.png" alt="Logo" class="logo">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- MENU -->
+    <div class="nav-menu">
+
+        <div class="nav-links">
+
+            <a href="../index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="blog.html">Blog</a>
+            <a href="apropos.html">À propos</a>
+            <a href="mystere.html">?</a>
+
+        </div>
+
+        <div class="nav-links-right">
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
         
     </header>
 
@@ -41,19 +67,35 @@
 
     <div class="contact-card">
 
-        <p>📩 Mon adresse e-mail :</p>
-        <p><a href="mailto:stella@example.com">stella@example.com</a></p>
-
+        <div class="email-box">
+    <p>📩 Mon adresse e-mail</p>
+    <a href="mailto:stella@example.com">
+        stella.richal.pro@example.com
+    </a>
+</div>
         <p>Retrouvez-moi sur les réseaux :</p>
 
-        <ul class="social-links">
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">GitHub</a></li>
-        </ul>
+    <ul class="social-links">
 
-        <a href="../index.html" class="btn">Retour à l'accueil</a>
+    <li>
+        <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </li>
 
+    <li>
+        <a href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </li>
+
+    <li>
+        <a href="#">
+            <i class="fab fa-github"></i>
+        </a>
+    </li>
+
+</ul>
     </div>
 
 </section>
@@ -62,5 +104,6 @@
     <footer>
         <p>&copy; 2026 Stella Portfolio. Tous droits réservés.</p>
     </footer>
+     <script src="../assets/js/menu.js"></script>
 </body>
 </html>
