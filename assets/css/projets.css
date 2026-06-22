@@ -64,6 +64,7 @@
 }
 .projects-container p {
     font-size: 18px; /* 🔥 plus grand */
+    text-align: center;
 }
 .project-list {
     display: flex;
@@ -198,4 +199,21 @@
 .projects-others a:hover {    background-color: white;
     color: #127789;    border: 2px solid #127789;
 }   
+ 
+/* ========================= */
+/* MOBILE MENU */
+/* ========================= */
 
+@media screen and (max-width: 768px){
+    .hero-projects p {
+    font-size: 20px;
+    margin-bottom: 52px;
+}
+.hero-projects {
+    justify-content: end;
+}
+.hero-projects h1 {
+    font-size: 45px;
+    margin-bottom: 19px;
+}
+}

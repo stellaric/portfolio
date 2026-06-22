@@ -363,6 +363,16 @@ body{
 }
 
 @media screen and (max-width: 768px){
+.hero-blog {
+ 
+     margin-left: 0px;
+}
+
+.blog-content p {
+    font-size: 16px;
+    max-width: 600px;
+    line-height: 1.6;
+}
 
     .bloc-blog-left,
     .bloc-blog-right{
