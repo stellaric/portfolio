@@ -6,7 +6,10 @@
         <link rel="stylesheet" href="../assets/css/apropos.css">
         <link rel="stylesheet" href="../assets/css/general.css">
         <link rel="icon" type="image/png" href="../media/logo-onglet-stella.png">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
     <title>À propos</title>
 </head>
 
@@ -75,121 +78,534 @@
 
         </section>
         <!-- Section de mon parcours et compétences -->
-       <div class="sections-container">
+ <!-- =========================
+     MES INFORMATIONS
+========================= -->
 
-    <div class="section-container-col">
-        <section class="about-content">
-            <h2>Mon Parcours</h2>
-            <p>Je suis passionnée par la création digitale...</p>
-        </section>
-    </div>
+<section class="about-infos">
 
-    <div class="section-container-col">
-        <section class="skills">
-            <h2>Mes Compétences</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>React, Symfony</li>
-                <li>Node.js</li>
-                <li>MongoDB, MySQL</li>
-            </ul>
-        </section>
-    </div>
+    <div class="infos-intro">
 
-    <div class="section-container-col">
-        <section class="about-content">
-            <h2>Ma Passion</h2>
-            <p>Créer des expériences modernes et élégantes.</p>
-        </section>
-    </div>
+        <h2>Découvrez ce qui me définit</h2>
 
-</div>
-<div class="bottom-sections">
-
-    <section class="resume">
-        <h2>Mon CV</h2>
-        <p>Découvrez mon parcours professionnel.</p>
-        <a href="../media/CV_Stella.pdf" class="btn">Télécharger</a>
-    </section>
-
-    <section class="reseaux-sociaux">
-        <h2>Mes Réseaux</h2>
-        <p>Suivez-moi sur les réseaux.</p>
-        <a href="#" class="btn">Voir</a>
-    </section>
-    <section class="creative-universe">
-
-    <div class="creative-header">
-        <span>Mon univers</span>
-        <h2>Mes expériences créatives</h2>
         <p>
-            Un aperçu de mon univers, de mes inspirations et des expériences
-            qui nourrissent ma créativité au quotidien.
+            Mon parcours, mes compétences et mes inspirations
+            sont au cœur de ma façon de créer.
         </p>
     </div>
 
-    <!-- SLIDER -->
-    <div class="slider-container">
 
-        <div class="slider-track">
+    <div class="info-cards">
 
-            <!-- CARD 1 -->
-            <div class="slide-card">
-                <img src="https://picsum.photos/id/237/200/300" alt="Projet créatif">
 
-                <div class="slide-overlay">
-                    <h3>UI Design</h3>
-                    <p>Création d'interfaces modernes et intuitives.</p>
-                </div>
+        <!-- =====================
+             PARCOURS
+        ====================== -->
+
+        <article class="info-card">
+
+            <div class="info-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
             </div>
 
-            <!-- CARD 2 -->
-            <div class="slide-card">
-                <img src="https://picsum.photos/id/227/200/3002.jpg" alt="Moodboard">
+            <span class="card-number">01</span>
 
-                <div class="slide-overlay">
-                    <h3>Moodboards</h3>
-                    <p>Inspirations visuelles et direction artistique.</p>
-                </div>
+            <h3>Mon parcours</h3>
+
+            <p>
+                De mes débuts dans le développement web à la gestion
+                de projets digitaux, découvrez les étapes qui ont
+                construit mon parcours.
+            </p>
+
+            <button
+                class="info-button"
+                data-modal="parcoursModal">
+
+                Découvrir mon parcours
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =====================
+             COMPETENCES
+        ====================== -->
+
+        <article class="info-card">
+
+            <div class="info-icon">
+                <i class="fa-solid fa-code"></i>
             </div>
 
-            <!-- CARD 3 -->
-            <div class="slide-card">
-                <img src="https://picsum.photos/id/137/200/300" alt="Création digitale">
+            <span class="card-number">02</span>
 
-                <div class="slide-overlay">
-                    <h3>Branding</h3>
-                    <p>Identités visuelles modernes et cohérentes.</p>
-                </div>
+            <h3>Mes compétences</h3>
+
+            <p>
+                Développement, design et gestion de projet :
+                découvrez les outils et technologies que j'utilise
+                pour donner vie à mes idées.
+            </p>
+
+            <button
+                class="info-button"
+                data-modal="skillsModal">
+
+                Découvrir mes compétences
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =====================
+             INSPIRATIONS
+        ====================== -->
+
+        <article class="info-card">
+
+            <div class="info-icon">
+                <i class="fa-solid fa-heart"></i>
             </div>
 
-            <!-- CARD 4 -->
-            <div class="slide-card">
-                <img src="https://picsum.photos/id/257/200/300" alt="Workspace">
+            <span class="card-number">03</span>
 
-                <div class="slide-overlay">
-                    <h3>Workspace</h3>
-                    <p>Organisation et environnement créatif.</p>
+            <h3>Mes inspirations</h3>
+
+            <p>
+                Voyage, créativité, design et découverte :
+                découvrez ce qui nourrit mon imagination
+                au quotidien.
+            </p>
+
+            <button
+                class="info-button"
+                data-modal="inspirationsModal">
+
+                Entrer dans mon univers
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     POP-UP PARCOURS
+========================= -->
+
+<div class="modal" id="parcoursModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-header">
+
+            <span>MON HISTOIRE</span>
+
+            <h2>Mon parcours</h2>
+
+            <p>
+                Quelques étapes qui ont construit mon parcours
+                et m'ont progressivement rapprochée du digital.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>01</span>
+
+                    <h3>Mes débuts</h3>
+
+                    <p>
+                        Mes premières expériences m'ont permis
+                        de découvrir progressivement l'univers
+                        du numérique et de la création.
+                    </p>
+
                 </div>
+
             </div>
 
-            <!-- CARD 5 -->
-            <div class="slide-card">
-                <img src="https://picsum.photos/id/127/200/300" alt="Lifestyle">
 
-                <div class="slide-overlay">
-                    <h3>Lifestyle</h3>
-                    <p>Un univers moderne, créatif et inspirant.</p>
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>02</span>
+
+                    <h3>Développement web</h3>
+
+                    <p>
+                        Je me suis ensuite formée au développement
+                        web afin d'apprendre à créer des interfaces
+                        modernes et fonctionnelles.
+                    </p>
+
                 </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>03</span>
+
+                    <h3>Projet digital</h3>
+
+                    <p>
+                        Mes différents projets m'ont permis de
+                        développer une approche plus complète,
+                        entre technique, créativité et expérience utilisateur.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>04</span>
+
+                    <h3>Chef de projet digital</h3>
+
+                    <p>
+                        J'ai élargi mes compétences vers la gestion
+                        de projet, le marketing digital et la conception
+                        d'expériences numériques.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>05</span>
+
+                    <h3>Aujourd'hui</h3>
+
+                    <p>
+                        Aujourd'hui, je continue à développer mon univers
+                        à travers mes projets, mes expériences et
+                        ma créativité.
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-</section>
- 
 </div>
+
+
+
+<!-- =========================
+     POP-UP COMPETENCES
+========================= -->
+
+<div class="modal" id="skillsModal">
+
+    <div class="modal-content skills-modal">
+
+        <button class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-header">
+
+            <span>MON SAVOIR-FAIRE</span>
+
+            <h2>Mes compétences</h2>
+
+            <p>
+                Un aperçu des technologies, outils et domaines
+                que j'utilise dans mes projets.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-category">
+
+                <div class="skill-category-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>Développement</h3>
+
+                <div class="skill-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Symfony</span>
+                    <span>Node.js</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <div class="skill-category-icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+
+                <h3>Design & UI/UX</h3>
+
+                <div class="skill-tags">
+
+                    <span>UI Design</span>
+                    <span>UX</span>
+                    <span>Figma</span>
+                    <span>Branding</span>
+                    <span>Identité visuelle</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <div class="skill-category-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+
+                <h3>Base de données</h3>
+
+                <div class="skill-tags">
+
+                    <span>MySQL</span>
+                    <span>MongoDB</span>
+                    <span>MariaDB</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <div class="skill-category-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+
+                <h3>Gestion de projet</h3>
+
+                <div class="skill-tags">
+
+                    <span>Trello</span>
+                    <span>Slack</span>
+                    <span>Google Workspace</span>
+                    <span>Gestion de projet</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     POP-UP INSPIRATIONS
+========================= -->
+
+<div class="modal" id="inspirationsModal">
+
+    <div class="modal-content inspiration-modal">
+
+        <button class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-header">
+
+            <span>MON UNIVERS</span>
+
+            <h2>Mes inspirations</h2>
+
+            <p>
+                Les choses qui nourrissent ma créativité
+                et influencent ma manière de créer.
+            </p>
+
+        </div>
+
+
+        <div class="inspiration-grid">
+
+
+            <div class="inspiration-item">
+
+                <div class="inspiration-image">
+                    <img
+                        src="https://picsum.photos/500/600?random=10"
+                        alt="Voyage">
+                </div>
+
+                <div class="inspiration-text">
+
+                    <i class="fa-solid fa-plane"></i>
+
+                    <h3>Voyage</h3>
+
+                    <p>
+                        Découvrir de nouveaux endroits,
+                        cultures et paysages.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="inspiration-item">
+
+                <div class="inspiration-image">
+                    <img
+                        src="https://picsum.photos/500/600?random=11"
+                        alt="Créativité">
+                </div>
+
+                <div class="inspiration-text">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    <h3>Créativité</h3>
+
+                    <p>
+                        Transformer une idée en quelque chose
+                        de visuel et concret.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="inspiration-item">
+
+                <div class="inspiration-image">
+                    <img
+                        src="https://picsum.photos/500/600?random=12"
+                        alt="Design">
+                </div>
+
+                <div class="inspiration-text">
+
+                    <i class="fa-solid fa-palette"></i>
+
+                    <h3>Design</h3>
+
+                    <p>
+                        Les couleurs, les formes et les interfaces
+                        qui rendent une expérience unique.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="inspiration-item">
+
+                <div class="inspiration-image">
+                    <img
+                        src="https://picsum.photos/500/600?random=13"
+                        alt="Lifestyle">
+                </div>
+
+                <div class="inspiration-text">
+
+                    <i class="fa-solid fa-camera"></i>
+
+                    <h3>Lifestyle</h3>
+
+                    <p>
+                        Les petits moments du quotidien qui
+                        alimentent mon univers créatif.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!---bottom resume -->
+<div class="bottom-sections">
+
+   
+    <section class="reseaux-sociaux">
+        <h2>Mes Réseaux</h2>
+        <p>Suivez-moi sur les réseaux.</p>
+        <a href="#" class="btn">Voir</a>
+    </section>
+    
+
+    </div>
+
    <!-- Section principale -->
         <section class="cta-projects">
     <div class="cta-content">
@@ -209,5 +625,6 @@
             <p>&copy; 2026 Stella Portfolio. Tous droits réservés.</p>
         </footer>
          <script src="../assets/js/menu.js"></script>
+         <script src="../assets/js/apropos.js"></script>
 </body>
 </html>

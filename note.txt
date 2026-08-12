@@ -596,3 +596,92 @@ lightbox.addEventListener("click", (e) => {
     }
 
 }
+
+-----------------page apropos-----------
+<!---bottom resume -->
+<div class="bottom-sections">
+
+    <section class="resume">
+        <h2>Mon CV</h2>
+        <p>Découvrez mon parcours professionnel.</p>
+        <a href="../media/CV_Stella.pdf" class="btn">Télécharger</a>
+    </section>
+
+    <section class="reseaux-sociaux">
+        <h2>Mes Réseaux</h2>
+        <p>Suivez-moi sur les réseaux.</p>
+        <a href="#" class="btn">Voir</a>
+    </section>
+    <section class="creative-universe">
+
+    <div class="creative-header">
+        <span>Mon univers</span>
+        <h2>Mes expériences créatives</h2>
+        <p>
+            Un aperçu de mon univers, de mes inspirations et des expériences
+            qui nourrissent ma créativité au quotidien.
+        </p>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider-container">
+
+        <div class="slider-track">
+
+            <!-- CARD 1 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/237/200/300" alt="Projet créatif">
+
+                <div class="slide-overlay">
+                    <h3>UI Design</h3>
+                    <p>Création d'interfaces modernes et intuitives.</p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/227/200/3002.jpg" alt="Moodboard">
+
+                <div class="slide-overlay">
+                    <h3>Moodboards</h3>
+                    <p>Inspirations visuelles et direction artistique.</p>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/137/200/300" alt="Création digitale">
+
+                <div class="slide-overlay">
+                    <h3>Branding</h3>
+                    <p>Identités visuelles modernes et cohérentes.</p>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/257/200/300" alt="Workspace">
+
+                <div class="slide-overlay">
+                    <h3>Workspace</h3>
+                    <p>Organisation et environnement créatif.</p>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="slide-card">
+                <img src="https://picsum.photos/id/127/200/300" alt="Lifestyle">
+
+                <div class="slide-overlay">
+                    <h3>Lifestyle</h3>
+                    <p>Un univers moderne, créatif et inspirant.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+ 
+</div>

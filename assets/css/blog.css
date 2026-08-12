@@ -95,29 +95,68 @@ margin-left: -46px;
 }
 
 /* BOUTON */
-.blog-content a {
-    margin-top: 30px;
-    padding: 15px 30px;
+/* ===========================
+   FLÈCHE SCROLL
+=========================== */
 
-    background-color: white;
-    color: #127789;
+.scroll-down{
+    margin-top:15px;
 
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
+    width:65px;
+    height:65px;
 
-    border-radius: 5px;
-    transition: 0.3s;
+    border:2px solid rgba(255,255,255,.6);
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+    backdrop-filter:blur(8px);
+
+    animation:bounce 2s infinite;
 }
 
-/* HOVER */
-.blog-content a:hover {
-    background-color: #127789;
-    color: white;
-    border: 2px solid white;
+.scroll-down:hover{
 
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background:rgba(255,255,255,.12);
+
+    transform:translateY(-5px);
+}
+
+.scroll-down span{
+
+    width:16px;
+    height:16px;
+
+    border-right:3px solid white;
+    border-bottom:3px solid white;
+
+    transform:rotate(45deg);
+
+    margin-top:-8px;
+}
+@keyframes bounce{
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100%{
+        transform:translateY(0);
+    }
+
+    40%{
+        transform:translateY(10px);
+    }
+
+    60%{
+        transform:translateY(5px);
+    }
 }
 
 /* ANIMATION APPARITION */
@@ -178,8 +217,8 @@ body{
     background: rgba(255,255,255,0.95);
 
     border-radius: 28px;
+    padding: 14px 30px;
 
-    padding: 35px 45px;
 
     display: flex;
     flex-direction: column;

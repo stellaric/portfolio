@@ -302,29 +302,175 @@
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE TABLETTE
+========================= */
+
+@media screen and (max-width: 1024px){
+
+    .contact-form-section{
+        padding: 50px 25px;
+    }
+
+
+    .contact-header h1{
+        font-size: 60px;
+    }
+
+
+    .contact-header p{
+        font-size: 19px;
+        max-width: 600px;
+    }
+
+
+    .contact-card{
+        max-width: 700px;
+        padding: 45px 35px;
+    }
+
+
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
 ========================= */
 
 @media screen and (max-width: 768px){
 
-    .contact-header h1{
-        font-size: 48px;
+
+    .contact-form-section{
+
+        min-height: auto;
+
+        padding:
+        90px 20px 50px;
+
     }
+
+
+    .contact-header{
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .contact-header h1{
+
+        font-size: 45px;
+
+        line-height: 1.1;
+
+    }
+
 
     .contact-header p{
-        font-size: 18px;
+
+        font-size: 16px;
+
+        line-height: 1.6;
+
+        max-width: 330px;
+
     }
+
 
     .contact-card{
-        padding: 35px 25px;
+
+        width: 100%;
+
+        padding: 35px 20px;
+
+        border-radius: 25px;
+
     }
+
 
     .contact-card p{
+
         font-size: 17px;
+
     }
 
-    .social-links li a{
-        width: 55px;
-        height: 55px;
+
+    .social-links{
+
+        gap: 15px;
+
+        margin-top: 25px;
+
     }
+
+
+    .social-links li a{
+
+        width: 55px;
+
+        height: 55px;
+
+        border-radius: 15px;
+
+        font-size: 17px;
+
+    }
+
+
+    .contact-form-section::after{
+
+        width: 250px;
+
+        height: 250px;
+
+        filter: blur(80px);
+
+    }
+
+}
+
+
+
+/* =========================
+   PETITS TELEPHONES
+========================= */
+
+@media screen and (max-width: 390px){
+
+
+    .contact-header h1{
+
+        font-size: 38px;
+
+    }
+
+
+    .contact-header p{
+
+        font-size: 15px;
+
+    }
+
+
+    .contact-card{
+
+        padding: 30px 15px;
+
+    }
+
+
+    .social-links{
+
+        gap: 12px;
+
+    }
+
+
+    .social-links li a{
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
 }

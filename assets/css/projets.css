@@ -66,6 +66,148 @@
     font-size: 18px; /* 🔥 plus grand */
     text-align: center;
 }
+
+.projects-toolbar{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.search-box{
+
+    width:100%;
+    max-width:500px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:18px 25px;
+
+    border:none;
+
+    border-radius:60px;
+
+    background:white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    font-size:16px;
+
+    transition:.3s;
+
+    outline:none;
+
+}
+
+.search-box input:focus{
+
+    box-shadow:
+    0 0 0 3px rgba(18,119,137,.15),
+    0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.project-filters{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.filter-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:13px 28px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(10px);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#444;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.filter-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:white;
+
+}
+
+.filter-btn.active{
+
+    background:#127789;
+
+    color:white;
+
+    box-shadow:0 15px 35px rgba(18,119,137,.35);
+
+}
+
+.project-count{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+.project-item{
+
+    transition:
+
+    opacity .35s,
+
+    transform .35s,
+
+    scale .35s;
+
+}
+
+.project-item.hide{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    scale:.9;
+
+    pointer-events:none;
+
+}
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -216,4 +358,52 @@
     font-size: 45px;
     margin-bottom: 19px;
 }
+.search-box input {
+    padding: 18px 6px;
+}
+}
+/* ===========================
+   MESSAGE AUCUN RESULTAT
+=========================== */
+
+.no-results{
+
+    display:none;
+
+    width:100%;
+
+    text-align:center;
+
+    margin:50px auto;
+
+    font-size:24px;
+
+    font-family:"Urbanist",sans-serif;
+
+    font-weight:600;
+
+    color:#127789;
+
+    animation:fadeIn .4s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
 }

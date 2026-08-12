@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../assets/css/projets.css">
       <link rel="stylesheet" href="../assets/css/general.css">
+      <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../media/logo-onglet-stella.png">
@@ -58,7 +60,8 @@
          <div class="hero-projects">
             <h1>Mes Projets</h1>
             <p>Découvrez une sélection de mes projets récents et les défis que j'ai relevés.</p>
-          </div>
+         
+        </div>
     </header>
 
     <!-- Section principale -->
@@ -68,18 +71,60 @@
             <div  class="projects-header">
                 <h2>Projets Récents</h2>
                 <p>Découvrez une sélection de mes projets récents et les défis que j'ai relevés.</p>
-                </div>
-            <!-- ========================= -->
+            <div class="projects-toolbar">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchProject"
+            placeholder="Rechercher un projet..."
+        >
+
+    </div>
+
+    <div class="project-filters">
+
+        <button class="filter-btn active" data-filter="all">
+            Tous
+        </button>
+
+        <button class="filter-btn" data-filter="ecommerce">
+            E-commerce
+        </button>
+
+        <button class="filter-btn" data-filter="vitrine">
+            Site vitrine
+        </button>
+
+        <button class="filter-btn" data-filter="react">
+            React
+        </button>
+
+        <button class="filter-btn" data-filter="ui">
+            UI / UX
+        </button>
+
+    </div>
+
+    <p class="project-count">
+        <span id="countProjects">4</span> projets
+    </p>
+
+</div>    
+            </div>
+<!-- ========================= -->
 <!-- PAGE PROJETS.HTML -->
+ 
 <!-- ========================= -->
 
-<div class="project-list">
+<div class="project-list" id="projectsList">
 
     <!-- PROJET 1 -->
-    <a href="projetdetail.html?id=1 " class="project-item">
+   <a href="projetdetail.html?id=1" class="project-item" data-category="ecommerce react html css javascript">
 
         <div class="project-img">
-            <img src="../media/projet/weboxing/logo_weboxing.png" alt="logo_weboxing">
+            <img src="../media/projet/weboxing/logo_webg.png" alt="logo_weboxing">
         </div>
 
         <div class="project-txt">
@@ -90,10 +135,92 @@
     </a>
 
     <!-- PROJET 2 -->
+ <a href="projetdetail.html?id=2 " class="project-item" data-category="vitrine html css javascript">
 
+        <div class="project-img">
+            <img src="../media/projet/ffl/logo_ffl.png" alt="logo_weboxing">
+        </div>
+
+        <div class="project-txt">
+            <h3>Projet Site Vitrine FastFood Light </h3>
+            <p>Création d’un site moderne et responsive.</p>
+        </div>
+
+    </a>
 
     <!-- PROJET 3 -->
+ <a href="projetdetail.html?id=3 " class="project-item" data-category="vitrine ui">
 
+        <div class="project-img">
+            <img src="../media/projet/lifestyle/logo_life.png" alt="logo_lifestyle">
+        </div>
+
+        <div class="project-txt">
+            <h3>Projet Site Vitrine Lifestyle </h3>
+            <p>Création d’un site moderne et responsive.</p>
+        </div>
+
+    </a>
+    <!-- PROJET 4 -->
+ <a href="projetdetail.html?id=4 " class="project-item" data-category="ecommerce">
+
+        <div class="project-img">
+            <img src="../media/projet/shoes/logo_shoes.png" alt="logo_shoes">
+        </div>
+
+        <div class="project-txt">
+            <h3>Projet Site Vitrine E-commerce Shoes </h3>
+            <p>Création d’un site moderne et responsive.</p>
+        </div>
+
+    </a>
+  <!-- PROJET  -->
+ <a href="projetdetail.html?id=5 " class="project-item" data-category="ecommerce">
+
+        <div class="project-img">
+            <img src="../media/projet/voyage/logo_voyage.png" alt="logo_voyage">
+        </div>
+
+        <div class="project-txt">
+            <h3>Projet Site Vitrine E-commerce Voyage </h3>
+            <p>Création d’un site moderne et responsive.</p>
+        </div>
+
+    </a>
+     <!-- PROJET  -->
+ <a href="projetdetail.html?id=6 " class="project-item" data-category="vitrine">
+
+        <div class="project-img">
+            <img src="../media/projet/connectify/logo_connectify.png" alt="logo_connectify">
+        </div>
+
+        <div class="project-txt">
+            <h3>Projet Site réseau social Connectify </h3>
+            <p>Création d’un site moderne et responsive.</p>
+        </div>
+
+    </a>
+     <!-- PROJET 7 -->
+ <a href="projetdetail.html?id=7 " class="project-item" data-category="vitrine">
+
+        <div class="project-img">
+            <img src="../media/projet/gamestore/logo_gamestore.png" alt="logo_gamestore">
+        </div>
+
+        <div class="project-txt">
+            <h3>Projet Site Vitrine Jeux Gamestore </h3>
+            <p>Création d’un site moderne et responsive.</p>
+        </div>
+
+    </a>
+</div>
+<div id="noResults" class="no-results">
+
+    <h3>Bien tenté ! 😄</h3>
+
+    <p>
+        Ce projet n'existe pas... ou pas encore.
+    </p>
 
 </div>
         </section>
@@ -102,10 +229,10 @@
             <div class="projects-container">   
                 <h2>Projets en cours</h2>
                 <p>Je travaille actuellement sur plusieurs projets passionnants, notamment une application de gestion de tâches et un site de blog personnel. Restez à l'écoute pour les mises à jour !</p>
-                <div class="project-list">
+               <div class="project-list" id="projectsList">
                     <div class="project-item">
                         <div class="project-img">
-                        <img src="https://picsum.photos/id/1/200/300" alt="Image du projet 4" class="project-image">
+                        <img src="../media/logo_projet.png" alt="Image du projet 4" class="project-image">
                         </div>
                         <div class="project-txt">
                         <h3>Projet 4 : Application de gestion de tâches</h3>
@@ -114,7 +241,7 @@
                     </div>
                     <div class="project-item">
                         <div class="project-img">
-                        <img src="https://picsum.photos/id/2/200/300" alt="Image du projet 5" class="project-image">
+                        <img src="../media/logo_projet.png" alt="Image du projet 5" class="project-image">
                         </div>
                         <div class="project-txt">
                         <h3>Projet 5 : Site de blog personnel</h3>
@@ -123,13 +250,23 @@
             </div>
         </section>
 
-        <section class="projects-others">
-            <div class="projects-container">
-                <h2>Autres Projets</h2>
-                <p>Explorez d'autres projets sur mon GitHub et découvrez mes contributions à la communauté open source.</p>
-                <a href="https://github.com/stellaric" class="btn">Voir les autres projets</a>
-            </div>
-        </section>
+       <section class="projects-others">
+    <div class="projects-container">
+        <h2>Autres Projets</h2>
+        <p>
+            Explorez d'autres projets sur mon GitHub et découvrez mes contributions à la communauté open source.
+        </p>
+
+        <a href="https://github.com/stellaric"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn">
+            Voir mon GitHub
+            &nbsp; 
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </div>
+</section>
         <!-- Bouton de retour en haut -->
 <div class="btn-top">
 <!-- Bouton retour en haut -->
@@ -145,5 +282,6 @@
         <p>&copy; 2026 Stella Portfolio. Tous droits réservés.</p>
     </footer>
     <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/filtre.js"></script>
 </body>
 </html>

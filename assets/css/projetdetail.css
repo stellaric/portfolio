@@ -58,7 +58,7 @@ body {
 .project-hero img {
     width: 100%;
 
-    max-width: 1100px;
+    max-width: 600px;
 
     margin-top: 50px;
 
@@ -141,6 +141,8 @@ body {
 .project-back-link a {
     color: #127789;
     text-decoration: underline;
+    float: right;
+    margin-top: 22px;
 }
 .project-back-link a:hover {
     color: #127789;
